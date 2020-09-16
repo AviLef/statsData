@@ -44,7 +44,7 @@
     <div id="P2">
         <h3>Print the first planet object</h3>
         <script>
-            var answer = "please complete";
+            var answer = planets[0];
             report("#P2", answer)
             //will need to look at the console to confirm for array objects.
         </script>
@@ -55,7 +55,11 @@
     <div id="P3">
         <h3>Create an array of planet's names</h3>
         <script>
-            var answer = "please complete";
+            var getNames = function(planet)
+            {
+                return planet.name;
+            }
+            var answer = planets.map(getNames);
             report("#P3", answer)
         </script>
     </div>
